@@ -1,0 +1,82 @@
+# ✅ **.gitignore (Go + Node + Terraform + Helm + K8s + macOS)**
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Go ###
+bin/
+build/
+dist/
+*.exe
+*.test
+*.out
+*.cover
+coverage.txt
+
+# Go modules
+go.sum
+
+### Node / TypeScript ###
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+coverage/
+dist/
+build/
+
+### Python (if needed for ETL experiments) ###
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+
+### Kubernetes ###
+*.kubeconfig
+.kube/
+helm-release.yaml
+
+### Helm ###
+charts/
+*.tgz
+
+### Terraform ###
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+
+### LocalStack ###
+.localstack/
+
+### MinIO ###
+minio/
+*.minio
+
+### Docker ###
+*.env
+.env.*
+docker-compose.override.yml
+
+### IDEs ###
+.vscode/
+.idea/
+*.swp
+*.swo
+
+### Misc ###
+tmp/
+temp/
+logs/
+
+### GH Create... scripts ###
+scripts/gh-create-*
